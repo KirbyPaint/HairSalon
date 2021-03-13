@@ -8,18 +8,20 @@
 
 @using (Html.BeginForm())
 {
-  @Html.LabelFor(model => model.FirstName)
-  @Html.EditorFor(model => model.FirstName)
+  <p>Client's First Name:
+  @Html.EditorFor(model => model.FirstName)</p>
 
-  @Html.LabelFor(model => model.LastName)
-  @Html.EditorFor(model => model.LastName)
+  <p>Client's Last Name:
+  @Html.EditorFor(model => model.LastName)</p>
 
-  @Html.LabelFor(model => model.ContactInfo)
-  @Html.EditorFor(model => model.ContactInfo)
+  <p>Best Contact for Client:
+  @Html.EditorFor(model => model.ContactInfo)</p>
+  <p>(please enter either a phone number, email, or mailing address)</p>
 
-  @Html.LabelFor(model => model.Stylist)
-  @Html.DropDownList("StylistId")
+  <p>Preferred Stylist:
+  @* @Html.DropDownList("StylistId") *@</p>
 
-  <input type="submit" value="Add new client" class="btn btn-default" />
+  <input type="submit" value="Add new client" class="btn btn-success">
 }
+<hr>
 <p>@Html.ActionLink("Show all clients", "Index")</p>
