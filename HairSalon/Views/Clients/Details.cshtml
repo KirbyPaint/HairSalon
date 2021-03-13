@@ -6,9 +6,10 @@
 
 <h1>Client Details</h1>
 <hr>
-<p>@Html.DisplayNameFor(model => model.FirstName): @Html.DisplayFor(model => model.FirstName)</p>
-<p>@Html.DisplayNameFor(model => model.LastName): @Html.DisplayFor(model => model.LastName)</p>
-<p>@Html.DisplayNameFor(model => model.ContactInfo): @Html.DisplayFor(model => model.ContactInfo)</p>
-<p>@Html.ActionLink("Edit Client", "Edit", new { id = Model.ClientId })</p>
-<p>@Html.ActionLink("Delete Client", "Delete", new { id = Model.ClientId })</p>
-<p>@Html.ActionLink("Back to list", "Index")</p>
+<p>Client's First Name: @Html.DisplayFor(model => model.FirstName)</p>
+
+<p>Client's Last Name: @Html.DisplayFor(model => model.LastName)</p>
+
+<p>Best Contact Info: @Html.DisplayFor(model => model.ContactInfo)</p>
+
+<p>@Html.ActionLink("Edit Client", "Edit", new { id = Model.ClientId }) | @Html.ActionLink("Delete Client", "Delete", new { id = Model.ClientId }) | @Html.ActionLink("Back to list", "Index")</p>
