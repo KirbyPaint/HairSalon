@@ -27,6 +27,4 @@ else
 
 
 <hr>
-<p>@Html.ActionLink("Edit Stylist Details", "Edit", new { id = ViewBag.thisStylist.StylistId })</p>
-<p>@Html.ActionLink("Delete Stylist", "Delete", new { id = ViewBag.thisStylist.StylistId })</p>
-<p>@Html.ActionLink("Back to list", "Index")</p>
+<p>@Html.ActionLink("Edit This Stylist Record", "Edit", new { id = ViewBag.thisStylist.StylistId }) | @Html.ActionLink("Delete This Stylist Record", "Delete", new { id = ViewBag.thisStylist.StylistId }) | @Html.ActionLink("Back To All Stylists", "Index")</p>
