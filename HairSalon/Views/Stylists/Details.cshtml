@@ -6,7 +6,7 @@
 @model HairSalon.Models.Stylist
 
 <h1>Stylist Details</h1>
-<hr />
+<hr>
 <p>@ViewBag.thisStylist.FirstName @ViewBag.thisStylist.LastName</p>
 
 <hr>
@@ -24,7 +24,6 @@ else
     <li>@client.LastName, @client.FirstName</li>
   }
 }
-
 
 <hr>
 <p>@Html.ActionLink("Edit This Stylist Record", "Edit", new { id = ViewBag.thisStylist.StylistId }) | @Html.ActionLink("Delete This Stylist Record", "Delete", new { id = ViewBag.thisStylist.StylistId }) | @Html.ActionLink("Back To All Stylists", "Index")</p>

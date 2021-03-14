@@ -1,5 +1,4 @@
 using System.IO;
-using HairSalon;
 using Microsoft.AspNetCore.Hosting;
 
 namespace HairSalon
